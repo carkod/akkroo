@@ -35,7 +35,6 @@ const submitData = (newGuestDetails) => {
   console.log('PUT::', newGuestDetails);
   console.groupEnd();
 
-
   // Static page navigation (routing)
   setDisplayThanks(true);
   setDisplayGuestList(false);

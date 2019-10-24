@@ -28,14 +28,14 @@ const DataCaptureForm = ({ emailLabel, checkboxLabel, pcLabel, guest, onSubmit }
       <h1 className="u-heading-1">Hello {guest.name}!</h1>
         <>
           <div className="c-data-capture-email" >
-            <label className="u-default-label" htmlFor="email">{emailLabel || 'E-mail'}</label>
+            <label className="u-default-label" htmlFor="email">{emailLabel || 'Email'}</label>
             <input className="u-default-input" type="email" name="email" placeholder="Please enter your email" {...bindEmail} />
           </div>
           <div className="c-data-capture-consent u-checkbox-container">
           
             <label className="u-default-label">{checkboxLabel || 'Tick this box if you consent to receive email with offers'}
               <input type="checkbox" className="u-checkbox" name="consent" checked={optIn ? 'checked' : ''} onChange={() => setConsent(!optIn)}/>
-              <span class="u-checkmark"></span>
+              <span className="u-checkmark"></span>
             </label>
           </div>
         </>
