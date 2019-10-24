@@ -45,11 +45,12 @@ const submitData = (newGuestDetails) => {
   }, 3000)
 }
 
+// Akkroo API integration
 const dispatchEmail = ({name}) => {
   const templateVars = {
     name: name
   }
-  window.AkkrooAPI.sendEmail(name, 'Marketing-offers', templateVars)
+  window.AkkrooAPI.sendEmail(name, 'registrationEmail', templateVars)
 }
 
 
