@@ -1,0 +1,66 @@
+.u-checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &:hover .u-checkbox ~ .u-checkmark {
+    background-color: $green-2;
+    cursor: pointer;
+  }
+}
+
+/* Hide the browser's default checkbox */
+.u-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.u-checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: $grey-2;
+}
+
+/* When the checkbox is checked, add a blue background */
+.u-checkbox-container .u-checkbox:checked ~ .u-checkmark {
+  background-color: $green-1;
+}
+
+/* Create the u-checkmark/indicator (hidden when not checked) */
+.u-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the u-checkmark when checked */
+.u-checkbox-container .u-checkbox:checked ~ .u-checkmark:after {
+  display: block;
+}
+
+/* Style the u-checkmark/indicator */
+.u-checkbox-container .u-checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid $white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

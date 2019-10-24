@@ -1,0 +1,28 @@
+@import '../styles/app.scss';
+
+
+.c-data-capture-email {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+
+.c-data-capture-postcode {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+
+.c-data-capture-consent {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}

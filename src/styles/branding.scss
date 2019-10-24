@@ -1,0 +1,54 @@
+@import './app.scss';
+
+
+.c-header {
+  z-index: 1;
+  background: $white;
+  width:100%;
+  border-bottom: 1px solid $grey-2;
+}
+
+.c-masthead {
+  background: $green-1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 0;
+
+  &__title {
+    color: $white;
+    width: 1024px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+}
+
+.c-basket-wrapper {
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.c-basket-inner {
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.c-basket-icon {
+  position:relative;
+}
+
+.c-basket-counter {
+  position: absolute;
+    right: 0;
+    top: 7px;
+    color: $white;
+    font-size: 10px;
+    width: 20px;
+    text-align: center;
+}
+

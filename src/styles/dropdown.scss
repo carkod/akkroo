@@ -1,0 +1,31 @@
+
+@import './app.scss';
+
+.c-dropdown {
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  background-image: none;
+  appearance: none;
+  text-transform: uppercase;
+  padding: 10px 1rem;
+  padding-right: 1.5rem;
+  font-size: 12px;
+  background-color: $grey-3;
+}
+
+.c-chevron{
+  padding-top: 0.7rem;
+  position: absolute;
+  right: 0.3rem;
+}
+
+.c-dropdown-wrapper{
+  position: relative;
+  svg {
+    width:0.8rem;
+    height: 0.8rem;
+  }
+}
