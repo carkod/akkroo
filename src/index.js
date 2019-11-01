@@ -5,6 +5,7 @@ import configureStore from  './store';
 import App from './containers/app';
 import { initialState as attendeesInitialState } from './reducers/attendees-list';
 import { initialState as guestInitialState } from './reducers/guest';
+import '../src/styles/app.scss';
 
 const initalState = {
   attendeesListReducer: attendeesInitialState,
